@@ -1,0 +1,162 @@
+main .container {
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form input[type="number"] {
+    height: 44px;
+    padding: 0 14px;
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form input[type="number"]:hover {
+    border-color: #808080;
+}
+
+.form input[type="number"]:focus {
+    border-color: #4e75ff;
+    box-shadow: 0 0 0 3px rgba(78, 117, 255, 0.15);
+}
+
+.form fieldset {
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    padding: 16px 20px 20px;
+    transition: border-color 0.2s;
+}
+
+.form fieldset:hover {
+    border-color: #333;
+}
+
+.form fieldset:focus-within {
+    border-color: #333;
+}
+
+.form legend {
+    padding: 0 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form fieldset label {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+    margin-right: 24px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.form input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    accent-color: #4e75ff;
+    cursor: pointer;
+}
+
+.form button {
+    height: 48px;
+    background-color: #4e75ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.form button:hover {
+    background-color: #3d5fe0;
+}
+
+body>.back-link {
+    align-self: center;
+}
+
+/* ==== iziToast кастомізація ==== */
+.iziToast {
+    border-radius: 8px;
+    box-shadow: none;
+    padding: 16px 20px;
+    align-items: center;
+}
+
+.iziToast>.iziToast-body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.iziToast-title {
+    color: #fff !important;
+    font-weight: 700;
+    margin-right: 6px;
+}
+
+.iziToast-message {
+    color: #fff !important;
+    font-weight: 400;
+    margin: 0;
+}
+
+.iziToast-icon {
+    position: static;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    flex-shrink: 0;
+    filter: brightness(0) invert(1);
+}
+
+.iziToast-close {
+    position: static;
+    margin-left: 20px;
+    background-image: none;
+    width: auto;
+    height: auto;
+}
+
+.iziToast-close::before {
+    content: '✕';
+    color: #fff;
+    font-size: 16px;
+}
+
+.iziToast.iziToast-color-green {
+    background-color: #4caf50;
+}
+
+.iziToast.iziToast-color-red {
+    background-color: #f15757;
+}
+
+.iziToast-progressbar {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.iziToast-progressbar>div {
+    background: rgba(255, 255, 255, 0.8);
+}
