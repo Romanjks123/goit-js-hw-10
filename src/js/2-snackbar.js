@@ -2,6 +2,8 @@
 import iziToast from "izitoast";
 // Додатковий імпорт стилів
 import "izitoast/dist/css/iziToast.min.css";
+import checkIcon from "../img/bi_check2-circle.svg";
+import errorIcon from "../img/bi_x-octagon.svg";
 
 const form = document.querySelector(".form");
 
@@ -16,7 +18,7 @@ form.addEventListener("submit", event => {
                 color: 'green',
                 title: 'OK',
                 message: ` Fulfilled promise in ${data}ms`,
-                iconUrl: './img/bi_check2-circle.svg',
+                iconUrl: checkIcon,
 
             });        
         })
@@ -26,7 +28,7 @@ form.addEventListener("submit", event => {
                 color: 'red',
                 title: 'Error',
                 message: ` Rejected promise in ${error}ms`,
-                iconUrl: './img/bi_x-octagon.svg',
+                iconUrl: errorIcon,
             });        
     })
 });
